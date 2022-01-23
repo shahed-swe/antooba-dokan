@@ -1,0 +1,21 @@
+@import "../../colors.scss";
+
+.form-group {
+    .form-control {
+        width: 100%;
+        color: #000;
+        font-size: 15px;
+        min-height: 42px;
+        // background: #e9e8e8;
+        border: 1px solid #e9e8e8;
+    }
+
+    .form-control:focus {
+        background: #fff;
+        border: 1px solid #e9e8e8;
+    }
+
+    .error {
+        border: 1px solid $danger !important;
+    }
+}

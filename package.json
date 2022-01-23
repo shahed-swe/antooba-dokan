@@ -1,0 +1,75 @@
+{
+    "name": "frontend",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "axios": "^0.21.1",
+        "bootstrap": "^4.6.0",
+        "caniuse-lite": "^1.0.30001255",
+        "comma-number": "^2.1.0",
+        "fs": "^0.0.1-security",
+        "gem": "^2.4.3",
+        "i18next": "^20.3.2",
+        "i18next-browser-languagedetector": "^6.1.2",
+        "i18next-http-backend": "^1.2.6",
+        "jsonwebtoken": "^8.5.1",
+        "jwt-decode": "^3.1.2",
+        "lodash": "^4.17.21",
+        "moment": "^2.29.1",
+        "moments": "^0.0.2",
+        "node-sass": "^4.14.1",
+        "query-string": "^7.0.1",
+        "react-barcode": "^1.4.1",
+        "react-bootstrap": "^1.6.1",
+        "react-data-table-component": "^7.0.0-rc2",
+        "react-date-picker": "^8.3.2",
+        "react-datepicker": "^4.3.0",
+        "react-feather": "^2.0.9",
+        "react-hook-form": "^7.10.1",
+        "react-html-parser": "^2.0.2",
+        "react-i18next": "^11.11.1",
+        "react-image-magnify": "^2.7.4",
+        "react-leaf-carousel": "^2.0.3",
+        "react-redux": "^7.2.5",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.3",
+        "react-select": "^4.3.1",
+        "react-step-wizard": "^5.3.6",
+        "react-textarea-autosize": "^8.3.3",
+        "react-time-picker": "^4.4.2",
+        "react-toastify": "^8.0.3",
+        "redux": "^4.1.1",
+        "redux-devtools-extension": "^2.13.9",
+        "redux-thunk": "^2.3.0",
+        "styled-components": "^5.3.0",
+        "sweetalert2": "^11.1.7",
+        "web-vitals": "^1.0.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

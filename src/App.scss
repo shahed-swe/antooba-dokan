@@ -1,0 +1,12 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./colors.scss";
+@import "./globals.scss";
+
+.App {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.is-verified{
+    border: 1px solid #28a745 !important;
+}
+

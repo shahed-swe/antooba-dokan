@@ -1,0 +1,54 @@
+@import '../../../colors.scss';
+.ordertitle {
+    font-weight: bold;
+    font-size: 18px;
+    color: #617c9c;
+    position: relative;
+    top: 5px
+}
+
+.orderid {
+    font-weight: bold;
+    font-size: 18px;
+    color: #424978;
+    position: relative;
+    top: 5px
+}
+
+.payment {
+    background-color: #CFF8EB;
+    padding: 3px 8px 3px 8px;
+    color: #25d2a3;
+    margin: 0 10px 0 10px
+}
+
+.orderstatus {
+    background-color: #FFECC7;
+    padding: 3px 8px 3px 8px;
+    color: #FFA61E;
+    margin: 0 10px 0 10px
+}
+
+.horizontalline {
+    border-right: 1px solid #DCE2EC;
+}
+
+.calender {
+    margin-left: 10px;
+    color: #96A9C8;
+}
+
+.date {
+    margin-left: 10px;
+    color: #96A9C8
+}
+
+.option-button {
+    cursor: pointer;
+    padding: 4px 5px 5px 5px;
+}
+
+.dropdown-margin {
+    position: relative;
+    top: 18px;
+}

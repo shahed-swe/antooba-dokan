@@ -1,0 +1,43 @@
+.chat-user-cotainer {
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+
+    .avatar-container {
+        width: 55px;
+        height: 55px;
+        overflow: hidden;
+        border-radius: 50%;
+
+        img {
+            width: 55px;
+            height: 55px;
+        }
+    }
+
+    .content-container {
+        padding-top: 6px;
+        padding-left: 10px;
+
+        .name {
+            text-transform: capitalize;
+            font-size: 15px;
+            margin-bottom: 0;
+            color: rgb(39, 39, 39);
+        }
+
+        .subtitle {
+            font-size: 13px;
+            margin-bottom: 0;
+            color: #555;
+        }
+    }
+
+    &:hover {
+        background: #dfdfdf59;
+    }
+}
+
+.is-selected-user {
+    background: #dfdfdf59 !important;
+}

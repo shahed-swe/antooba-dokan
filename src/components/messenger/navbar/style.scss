@@ -1,0 +1,50 @@
+.messenger-navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px !important;
+    background: #fff !important;
+    border-bottom: 1px solid #dfdfdf;
+
+    // avatar-container
+    .avatar-container {
+        .avatar-image-container {
+            width: 40px !important;
+            height: 40px !important;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 40px !important;
+                height: 40px !important;
+            }
+        }
+
+        .avatar-name-container {
+            padding-top: 8px;
+            padding-left: 10px;
+
+            p {
+                color: #000;
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    // chat-list-toggle-button-container
+    .chat-list-toggle-button-container {
+        .btn {
+            padding: 8px 9px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        width: 100% !important;
+    }
+
+    @media (min-width: 992px) {
+        width: -webkit-calc(100% - 350px);
+        width: -moz-calc(100% - 350px);
+        width: calc(100% - 350px);
+    }
+}

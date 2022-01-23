@@ -1,0 +1,95 @@
+// messenger-container
+.messenger-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: #fff !important;
+
+    // chat-list-container
+    .chat-list-container {
+        top: 0;
+        width: 100% !important;
+        height: 100vh !important;
+        background: #fff !important;
+        z-index: 999 !important;
+
+        @media (max-width: 992px) {
+            position: fixed;
+            left: -100%;
+        }
+
+        @media (min-width: 992px) {
+            position: absolute;
+            left: 0 !important;
+            width: 350px !important;
+            border-right: 1px solid #dfdfdf !important;
+        }
+    }
+
+    .is-open-chat-list {
+        left: 0 !important;
+    }
+
+    // message-box-container
+    .message-box-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw !important;
+        height: 100vh !important;
+        padding-top: 80px !important;
+        padding-left: 10px;
+        padding-bottom: 10px;
+
+        // message-list-container
+        .message-list-container{
+            width: 100%;
+            overflow-y: auto;
+            background: #fff;
+        }
+
+         /* ===== Scrollbar CSS ===== */
+        /* Firefox */
+        * {
+            scrollbar-width: auto;
+            scrollbar-color: #dfdfdf #ffffff;
+        }
+
+        /* Chrome, Edge, and Safari */
+        *::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: #dfdfdf;
+            border-radius: 10px;
+            border: 3px solid #ffffff;
+        }
+
+        // input-container
+        .input-container{
+            width: 100%;
+            padding: 15px 0px;  
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: #fff;
+            padding-left: 15px;
+            padding-right: 15px;
+        
+            @media(min-width: 992px){
+                padding-left: 360px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            padding-left: 360px !important;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.container {
+    @media (min-width: 1440px) {
+        max-width: 1350px;
+    }
+    @media (min-width: 1500px) {
+        max-width: 1480px;
+    }
+    @media (min-width: 1680px) {
+        max-width: 1550px;
+    }
+}
+
+.col-padding {
+    padding: 10px;
+    @media (min-width: 992px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+// Container
+// .container {
+//     @media (min-width: 1440px) {
+//         max-width: 1350px;
+//     }
+//     @media (min-width: 1500px) {
+//         max-width: 1480px;
+//     }
+//     @media (min-width: 1680px) {
+//         max-width: 1550px;
+//     }
+// }

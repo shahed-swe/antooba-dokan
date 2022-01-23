@@ -1,0 +1,17 @@
+.accountcard {
+    background-color: #E9E8E8 !important;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px !important;
+
+    .accountcard-header {
+        background-color: #E9E8E8 !important;
+
+        &__title {
+            margin-bottom: 5px;
+        }
+    }
+
+    .accountcard-footer {
+        background-color: #E9E8E8 !important;
+    }
+}

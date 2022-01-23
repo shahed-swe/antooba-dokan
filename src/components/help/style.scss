@@ -1,0 +1,80 @@
+// Help drawer
+.help-drawer-container {
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0%;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        overflow-y: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.4s;
+        background: rgba(0, 0, 0, 0.548);
+    }
+
+    .open-backdrop {
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition-delay: 0s !important;
+    }
+
+    .drawer {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        overflow-y: auto;
+        transition: 0.3s;
+        background: #fff;
+        overflow-x: hidden;
+        transition-timing-function: ease-out;
+        z-index: 99999;
+
+        .drawer-body {
+            padding: 15px;
+        }
+
+        @media(min-width: 576px) {
+            width: 350px;
+        }
+    }
+
+    .open-drawer {
+        right: 0 !important;
+    }
+}
+
+
+// Float button
+.float-btn-container {
+    .float-btn {
+        position: fixed !important;
+        top: 45% !important;
+        right: -35px !important;
+        z-index: 9999 !important;
+        color: #042893 !important;
+        background: #063cdd49 !important;
+        border-radius: 0 !important;
+        border-top-left-radius: 25px !important;
+        border-bottom-left-radius: 25px !important;
+        padding: 10px !important;
+        transition: 0.3s all !important;
+
+        span {
+            padding-left: 5px;
+            font-size: 13px;
+        }
+
+        &:hover {
+            right: 0 !important;
+        }
+    }
+
+    .open {
+        right: 0;
+    }
+}

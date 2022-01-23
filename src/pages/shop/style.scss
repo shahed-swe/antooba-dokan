@@ -1,0 +1,32 @@
+@import "../../App.scss";
+.shop-container {
+    .item-card {
+        border: 0;
+        width: 100%;
+        float: left;
+        min-height: 140px;
+        margin-bottom: 10px;
+        .card-body {
+            border-radius: 4px;
+            position: relative;
+            border: 1px solid $gray-200;
+            a {
+                text-decoration: none;
+            }
+            p {
+                color: $black;
+            }
+        }
+        @media(min-width: 768px) {
+            width: 33.33%;
+            padding: 5px;
+            margin-bottom: 0;
+        }
+        @media(min-width: 992px) {
+            width: 25%;
+        }
+    }
+    .create-card {
+        cursor: pointer;
+    }
+}

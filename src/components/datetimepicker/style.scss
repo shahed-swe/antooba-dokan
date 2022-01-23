@@ -1,0 +1,86 @@
+@mixin respond ($breakpoint) {
+    @if $breakpoint==mobile {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    }
+}
+
+.newcol {
+    position: relative;
+    left: 15px;
+}
+
+.datetime {
+    padding: 10px 0px 10px 0px;
+    &__labelfrom {
+        // margin-left: 10px;
+        padding-top: 7px;
+        position: relative;
+        right: -42px;
+        @include respond(mobile) {
+            display: none;
+        }
+    }
+    &__labelto {
+        // margin-left: 10px;
+        padding-top: 7px;
+        position: relative;
+        right: -29px;
+        @include respond(mobile) {
+            display: none;
+        }
+    }
+    .react-date-picker__wrapper {
+        border-radius: 0.3em;
+        padding: 5px;
+        padding-left: 45px;
+        @include respond(mobile) {
+            padding-left: 10px;
+            margin-left: 35px;
+        }
+    }
+}
+
+.fromdate {
+    position: relative;
+    left: -20px;
+}
+
+.todate {
+    @include respond(mobile) {
+        position: relative;
+        left: 10px;
+    }
+}
+
+.stockin_datepicker .react-date-picker__wrapper {
+    // display: block;
+    height: 43px;
+    width: 790px;
+    border: 1px solid #e9e8e8;
+    @include respond(mobile) {
+        width: 330px;
+    }
+}
+
+.stockin_datepicker2 .react-date-picker__wrapper {
+    // display: block;
+    height: 43px;
+    width: 790px;
+    border: 1px solid #e9e8e8;
+    padding-left: 8px;
+    @include respond(mobile) {
+        width: 330px;
+    }
+}
+
+.customer_datepicker .react-date-picker__wrapper {
+    height: 43px;
+    width: 760px;
+    border: 1px solid #e9e8e8;
+    padding-left: 10px;
+    @include respond(mobile) {
+        width: 333px;
+    }
+}

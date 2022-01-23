@@ -1,0 +1,64 @@
+@mixin respond ($breakpoint) {
+    @if $breakpoint==tablet {
+        @media only screen and (max-width: 600px) {
+            @content;
+        }
+    }
+    @if $breakpoint==mobile {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    }
+    @if $breakpoint==laptop {
+        @media only screen and (max-width: 1370px) {
+            @content
+        }
+    }
+}
+
+.brand-add {
+    cursor: pointer;
+    color: #063CDD;
+}
+
+.return-applicable {
+    position: relative;
+    top: 10px;
+}
+
+.day-second {
+    position: relative;
+    top: -50px;
+    left: 470px;
+}
+
+.another-day {
+    position: relative;
+    top: -50px;
+    left: 305px;
+}
+
+.day-second {
+    @include respond(mobile) {
+        left: 365px;
+    }
+    @include respond(laptop) {
+        left: 340px;
+    }
+}
+
+.another-day {
+    @include respond(mobile) {
+        left: 220px;
+    }
+    @include respond(laptop) {
+        left: 195px;
+    }
+}
+
+.react-date-picker__wrapper {
+    border: none;
+}
+.react-time-picker__wrapper {
+    border: 0 !important;
+}

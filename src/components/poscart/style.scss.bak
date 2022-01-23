@@ -1,0 +1,164 @@
+// Help drawer
+@import '../../colors.scss';
+.pos-drawer-container {
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0%;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        overflow-y: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.4s;
+        background: rgba(0, 0, 0, 0.548);
+    }
+    .open-backdrop {
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition-delay: 0s !important;
+    }
+    .drawer {
+        position: fixed;
+        top: 95%;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        border-top: 0.2px solid #E8E8E8;
+        overflow-y: auto;
+        transition: 0.3s;
+        background: #fff;
+        overflow-x: hidden;
+        transition-timing-function: ease-out;
+        z-index: 9999;
+        .drawer-wrapper-scroll-y {
+            display: block;
+        }
+        .drawer-custom-scrollbar {
+            position: relative;
+            height: 450px;
+            overflow: auto;
+            @media (min-width: 300px) {
+                height: 480px;
+            }
+            @media( min-width: 370px) {
+                height: 490px;
+            }
+            @media(min-width: 576px) {
+                height: 650px;
+            }
+            @media(min-width: 760px) {
+                height: 490px;
+            }
+            @media(min-width: 1020px) {
+                height: 590px;
+            }
+            @media(min-width: 1400px) {
+                height: 490px;
+            }
+            @media(min-width: 2550px) {
+                height: 690px;
+            }
+        }
+        .drawer-body {
+            padding: 15px;
+            .my-custom-scrollbar {
+                position: relative;
+                height: 450px;
+                overflow: auto;
+            }
+            .table-wrapper-scroll-y {
+                display: block;
+            }
+        }
+    }
+    .open-drawer {
+        top: 34.5% !important;
+        overflow: hidden; // overflow-x: scroll;
+    }
+}
+
+// Float button
+.pos-float-btn-container {
+    .float-btn {
+        position: fixed !important;
+        top: 90.9% !important;
+        right: 50% !important;
+        height: 80px;
+        width: 80px;
+        z-index: 99999 !important;
+        color: #000000 !important;
+        background: #ffffff !important;
+        border-radius: 0 !important;
+        // border-top-right-radius: 50px !important;
+        // border-top-left-radius: 50px !important;
+        border-left: 1px solid #E8E8E8;
+        border-top: 1px solid #E8E8E8;
+        cursor: pointer;
+        padding: 10px !important;
+        transition: 0.36s all !important;
+        transform: rotate(45deg);
+        @media (min-width: 300px) {
+            top: 92%;
+            left: 38.5% !important;
+        }
+        @media(min-width: 576px) {
+            left: 39% !important;
+        }
+        @media(min-width: 760px) {
+            left: 44% !important;
+        }
+        @media(min-width: 1020px) {
+            left: 46% !important;
+        }
+        @media(min-width: 1400px) {
+            left: 48% !important;
+        }
+        @media(min-width: 2550px) {
+            left: 48% !important;
+        }
+        &:hover {
+            right: 50% !important;
+        }
+    }
+    .btn__content {
+        position: fixed;
+        left: 47%;
+        top: 92.5%;
+        z-index: 999999;
+        cursor: pointer;
+        color: $primary;
+        @media (min-width: 300px) {
+            left: 45%;
+        }
+        @media(min-width: 576px) {
+            left: 55%;
+        }
+        @media(min-width: 760px) {
+            left: 47%;
+        }
+        @media(min-width: 1020px) {
+            left: 48%;
+        }
+        @media(min-width: 1400px) {
+            left: 49.3%;
+        }
+        @media(min-width: 2550px) {
+            left: 49%;
+        }
+    }
+    .open {
+        top: 30.3% !important;
+    }
+    .text-open {
+        transition: 0.36s all !important;
+        top: 32.5%;
+    }
+}
+
+.product-list {
+    overflow-x: scroll;
+    height: 5%;
+}

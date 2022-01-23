@@ -1,0 +1,135 @@
+@import '../../colors.scss';
+.general-product-container {
+    width: 100% !important;
+    background: #fff !important;
+    .normal {
+        padding: 0 !important;
+        color: none !important;
+        border-radius: 0 !important;
+        background: none !important;
+        text-decoration: none !important;
+    }
+    .card {
+        float: left;
+        border-radius: 0;
+        overflow: hidden;
+        position: relative;
+        transition: 0.3s all;
+        border: 1px solid $gray-200;
+        width: 50%;
+        .card-body {
+            padding: 10px;
+            transition: 0.3s all;
+            position: relative;
+            height: 260px;
+            // width: 120px;
+            .image__container {
+                margin: auto;
+                overflow: hidden;
+                text-align: center;
+                min-height: 130px;
+                background: #fff;
+                @media (min-width: 992px) {
+                    min-height: 120px;
+                }
+                .card__image_size {
+                    max-height: 170px;
+                    @media (min-width: 300px) {
+                        max-height: 200px;
+                    }
+                    @media (min-width: 370px) {
+                        max-height: 250px;
+                    }
+                    @media (min-width: 768px) {
+                        max-height: 170px;
+                    }
+                    @media (min-width: 992px) {
+                        max-height: 170px;
+                    }
+                    @media (min-width: 1201px) {
+                        max-height: 170px;
+                    }
+                    @media (min-width: 1441px) {
+                        max-height: 170px;
+                    }
+                    @media (min-width: 2550px) {
+                        max-height: 270px;
+                    }
+                }
+            }
+            .product__content {
+                .product__name {
+                    color: #000;
+                    font-size: 13px;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                    transition: 0.3s all;
+                    height: 60px;
+                    overflow: hidden;
+                }
+                .product__price_del {
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    font-weight: 600;
+                }
+                .product__price {
+                    color: $primary;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    font-weight: 600;
+                }
+            }
+            .stock__badge_danger {
+                position: absolute;
+                right: 15px;
+                bottom: 15px;
+                border-radius: 2rem;
+                padding: 9px 11px;
+            }
+            .stock__badge_success {
+                position: absolute;
+                right: 15px;
+                bottom: 15px;
+                color: $primary;
+                border-radius: 2rem;
+                padding: 9px 11px;
+            }
+            .discount__sticker {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 50px;
+                height: 50px;
+                background: $primary;
+                p {
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: 300;
+                    width: 40px;
+                }
+            }
+        }
+        @media (min-width: 300px) {
+            width: 50%;
+        }
+        @media (min-width: 768px) {
+            width: 33.33%;
+        }
+        @media (min-width: 992px) {
+            width: 30%;
+            &:hover {
+                z-index: 9;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+            }
+        }
+        @media (min-width: 1201px) {
+            width: 20%;
+        }
+        @media (min-width: 1441px) {
+            width: 15.66%;
+        }
+        @media (min-width: 2550px) {
+            width: 15.66%;
+        }
+    }
+}

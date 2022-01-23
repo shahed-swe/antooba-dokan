@@ -1,0 +1,121 @@
+@import '../../colors.scss';
+// Help drawer
+.busket-help-drawer-container {
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0%;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        overflow-y: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.4s;
+        background: rgba(0, 0, 0, 0.548);
+    }
+    .open-backdrop {
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition-delay: 0s !important;
+    }
+    .drawer {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        overflow-y: auto;
+        transition: 0.3s;
+        background: #fff;
+        overflow-x: hidden;
+        transition-timing-function: ease-out;
+        z-index: 99999;
+        .drawer-body {
+            padding: 15px;
+        }
+        @media(min-width: 790px) {
+            width: 50%;
+        }
+    }
+    .open-drawer {
+        right: 0 !important;
+    }
+}
+
+// background
+.payment-background {
+    background-color: $gray-300;
+}
+
+// Float button
+.busket-float-btn-container {
+    .float-btn {
+        position: fixed !important;
+        top: 11% !important;
+        right: 1% !important;
+        z-index: 9999 !important;
+        color: #042893 !important;
+        border-radius: 0 !important;
+        height: 45px;
+        cursor: pointer;
+        // border-top-left-radius: 25px !important;
+        // border-bottom-left-radius: 25px !important;
+        padding: 10px !important;
+        transition: 0.3s all !important;
+        span {
+            padding-left: 5px;
+            font-size: 13px;
+        }
+        @keyframes spaceboots {
+            0% {
+                -webkit-transform: translate(2px, 1px) rotate(0deg);
+            }
+            10% {
+                -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            }
+            20% {
+                -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            }
+            30% {
+                -webkit-transform: translate(0px, 2px) rotate(0deg);
+            }
+            40% {
+                -webkit-transform: translate(1px, -1px) rotate(1deg);
+            }
+            50% {
+                -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            60% {
+                -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            }
+            70% {
+                -webkit-transform: translate(2px, 1px) rotate(-1deg);
+            }
+            80% {
+                -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            }
+            90% {
+                -webkit-transform: translate(2px, 2px) rotate(0deg);
+            }
+            100% {
+                -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+        .shake {
+            animation-name: spaceboots;
+            animation-duration: 0.8s;
+            transform-origin: 50% 50%;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    }
+    .open {
+        right: 0;
+    }
+}
+
+.custom-control-label {
+    padding-top: 2px !important;
+}
